@@ -16,15 +16,17 @@ yum install libaio # 安装依赖包`
 
 ### 添加 MySQL Yum Repository
 添加 MySQL Yum Repository 到你的系统 repository 列表中，执行   
-`yum localinstall mysql-community-release-el7-5.noarch.rpm
+`yum localinstall mysql-community-release-el7-5.noarch.rpm`
 
-验证下是否添加成功
+验证下是否添加成功   
 `yum repolist enabled | grep "mysql.*-community.*"`   
 可以看到下面内:   
-`[root@bogon software]# yum repolist enabled | grep "mysql.*-community.*"   
+```
+[root@bogon software]# yum repolist enabled | grep "mysql.*-community.*"   
 mysql-connectors-community/x86_64        MySQL Connectors Community           1   
 mysql-tools-community/x86_64             MySQL Tools Community                1   
-mysql56-community/x86_64                 MySQL 5.6 Community Server          13`
+mysql56-community/x86_64                 MySQL 5.6 Community Server          13   
+```
 
 选择要启用 MySQL 版本   
 查看 MySQL 版本，执行   
