@@ -2,7 +2,8 @@
 
 ## 安装
 ### 环境
-
+CentOS Linux release 7.3.1611 (Core)
+5.6.36 MySQL Community Server (GPL)
 ### 依赖
 MySQL 依赖 libaio，所以先要安装 libaio   
 `yum search libaio  # 检索相关信息   
@@ -118,6 +119,10 @@ firewall-cmd --permanent --zone=public --add-port=3306/udp
 `flush privileges;`
 
 ### 对数据存放目录创建软连接
+```
+mkdir /home/data
+ln -s /var/lib/mysql /home/data/mysql
+```
 
 ### 开机自起
 查看 MySQL 服务是否开机启动   
