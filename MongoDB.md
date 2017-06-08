@@ -32,3 +32,13 @@ systemctl status mongod
 systemctl stop mongod
 ```
 
+## 配置
+### 配置文件
+```
+/etc/mongod.conf
+```
+
+### 为数据目录创建软连接
+```
+ln -s /var/lib/mongo /home/data/mongo
+```
