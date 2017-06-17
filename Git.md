@@ -11,4 +11,6 @@ git push -u origin master
 git mv -f Mysql.md MySQL.md
 git add -u MySQL.md
 git commit -m "rename Mysql.md"
+
+git rm -rf database/
 ```
