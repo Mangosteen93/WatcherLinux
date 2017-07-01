@@ -1,7 +1,6 @@
 # Git
 
 ## 安装
----
 ### 环境
 CentOS Linux release 7.3.1611 (Core)
 git version 1.8.3.1
@@ -54,7 +53,6 @@ The key's randomart image is:
 ```
 此时ssh配置完成，/root/.ssh路径下可以看到生成的公钥和私钥
 
----
 ## 在github中配置公钥
 执行命令：
 ```
@@ -62,7 +60,6 @@ cat ~/.ssh/id_rsa.pub
 ```
 登陆github账号，复制公钥到用户设置相应位置。配置完成后即可在linux服务器上克隆git项目了。
 
----
 ## 指令
 ```
 git init
