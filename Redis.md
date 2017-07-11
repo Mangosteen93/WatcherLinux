@@ -48,7 +48,7 @@ auth youpassword
 redis-cli -h yourIp -p yourPort  -a youPassword
 ```
 
-###配置IP
+### 配置IP
 在redis.conf文件中把# bind 127.0.0.1前面的#去掉， 用要配置的IP替换127.0.0.1
 
 ### 为数据目录创建软连接
