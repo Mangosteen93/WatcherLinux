@@ -59,11 +59,11 @@ MongoDB是没有默认管理员账号，所以要先添加管理员账号，再�
 ```
 ./mongo
 > use admin
-> db.createUser(
+> db.createUser({
   user: "root",
   pwd: "root",   
   roles: [ { role: "root", db: "admin" } ]   
-)
+})
 ```
 添加成功时显示：
 ```
